@@ -40,3 +40,4 @@ Note: projectid is the name on your gcp-project
 * In the root of the project run the command: `````travis encrypt-file google-key.json --add````` Note: if you are using travis-ci.com swap --add, with --pro.
 * An openssl command will be printed, copy it and dont lose it!
 * Paste this openssl command on a line in .travis.yml -> before_install / if there is a similar line, replace it instead.
+* Personally had to enable Identity and Access Management API.
