@@ -1,8 +1,8 @@
-variable "bucket_name" {
+variable "bucket_name"{
 description = "GCS bucket name, need a unique value"
-type = string
+type        = string
 }
-variable "project_id" {
+variable "project_id"{
 description = "GCP project id/name"
-type = string
+type        = string
 }

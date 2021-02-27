@@ -1,0 +1,10 @@
+env:
+  global:
+    - GCP_PROJECT_ID=var.project_id
+    - tf_version=0.14.4
+    - CLOUDSDK_CORE_DISABLE_PROMPTS=1
+branches:
+  only:
+    - master
+before_install:
+  - openssl aes-256-cb -K
