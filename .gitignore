@@ -1,1 +1,16 @@
-init/google-key.json
+#service account key
+/google-key.json
+google-key.json
+
+.idea/workspace.xml
+
+#terraform init files / local files
+*.tfvars
+**.tfvars
+**/.tfvars
+/init/.terraform.lock.hcl
+/init/terraform.tfstate
+**/.terraform/*
+**/terraform.*
+*.terraform
+**.terraform

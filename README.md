@@ -37,3 +37,6 @@ Note: projectid is the name on your gcp-project
 * Change bucket name in backend.tf to the one specified earlier through the export/set command. Or check the name of the latest created bucket on the console website.
 * Change GCP_PROJECT_ID under .travis.yml -> env-> global, to your own project id.
 * Make sure roles mentioned in step 6 of ex02 is applied.
+* In the root of the project run the command: `````travis encrypt-file google-key.json --add````` Note: if you are using travis-ci.com swap --add, with --pro.
+* An openssl command will be printed, copy it and dont lose it!
+* Paste this openssl command on a line in .travis.yml -> before_install / if there is a similar line, replace it instead.
