@@ -6,7 +6,7 @@ source = "hashicorp/google"
 }
 }
 provider "google"{
-credentials = "${file("google-key.json")}"
+credentials = "${file("../google-key.json")}"
 project     = var.project_id
 region      = "us-central1"
 zone        = "us-central1-c"
