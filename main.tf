@@ -1,5 +1,5 @@
 resource "google_service_account" "default"{
-account_id   = "compute_service_id"
+account_id   = "compute-service"
 display_name = "Compute Service"
 }
 
