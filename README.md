@@ -1,9 +1,9 @@
 # PGR301 2021 Exam February
 * NB: **This task was done on a MAC. But I have provided a guide for Windows aswell.**
 * NB: **I personally used: https://travis-ci.org for my builds.** But have instructions for travis-ci.com as well.
-* NB: **This readme has been structured with the information and instructions around each exercise given by: https://github.com/PGR301-2020/konte , so please refer here if you feel some steps may be missing.**
+* NB: **This readme has been structured with the information and instructions around each exercise already given by: https://github.com/PGR301-2020/konte , so please refer here if you feel some steps may be missing.**
 ---
-#### Prerequisites
+#### Prerequisites not mentioned in the exam repository.
 * Have a google account so you can access: https://console.google.cloud.com
 * Have **Billing** enabled for your account, this is so you can be able to create and manage Service-Accounts. 
 ## EX02
@@ -43,7 +43,7 @@ Note: "your project id" is the name of the gcp-project you have currently select
 * Note: These steps CAN be done through the terminal, but I find the process tedious and volatile.
 ---
 ## Ex03
-#### Prerequisites
+#### Prerequisites not mentioned in the exam repository.
 * Under API&Services enable the APIs: Container Registry, Cloud Storage, Cloud Run and **Compute Engine**.
 * Personally had to enable Identity and Access Management API for Travis to function properly so I recommend doing this as well.
 * Make sure the extra roles mentioned in step 6 of ex02 is/were applied.
@@ -57,8 +57,8 @@ If you did not choose --add in the encrypt-command, an openssl command will be p
 * Paste the openssl command in the file .travis.yml, under --> **before_install**. If there is a similar line already there, replace it instead.
 * Remember to set the travis env TF_ENV before pushing a build (as specified in the exam repo). 
 ---
-Finally commit and push your changes by:
+Finally commit and push your changes, to view them on Travis:
 1. ````git add .```` which should be fine considering the gitignore file in the root of the project. Note: Be absolutely sure you named your **key** acording to the instructions, or it will get exposed and/or wont get encrypted.
 2. ````git commit -m "some random name"````
-3. ````git push -u origin master````
+3. ````git push -u origin master```` as travis will not build on other branches.
 * You should now be able to see travis build the project and apply the given requirements on either travis-ci.org or travis-ci.com. **Note: Please make sure you have enabled the cloned repo/fork on your desired website.**
