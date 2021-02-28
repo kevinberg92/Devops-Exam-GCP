@@ -1,5 +1,6 @@
 # PGR301 2021 Exam February
 * NB: **This task was done on a MAC. But I have provided a guide for Windows aswell.**
+* NB: **I personally used: https://travis-ci.org for my builds.** But have instructions for travis-ci.com as well.
 * NB: **This readme has been structured with the information and instructions around each exercise given by: https://github.com/PGR301-2020/konte , so please refer here if you feel some steps may be missing.**
 ---
 #### Prerequisites
